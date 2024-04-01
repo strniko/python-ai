@@ -32,7 +32,8 @@ def evaluate_child(child_string, goal):
 
 
 def main():
-    goal = "Test Test"
+    goal = input("Enter the Goal string here\n [+] ")
+    print("")
     children = 200
     generations = 1000
     randomness = 0.9
