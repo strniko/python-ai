@@ -5,4 +5,5 @@ You can find Information about the AI structure in this doc and on the providet 
 ## [The Genetic Algorithm (GA)](https://en.wikipedia.org/wiki/Genetic_algorithm){:target="_blank"}
 PLACEHOLDER
 ## [Neuroevolution of augmenting topologies (NEAT)](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies){:target="_blank"}
+<a href="https://openai.com" target="_blank">OpenAI's website</a>
 PLACEHOLDER
