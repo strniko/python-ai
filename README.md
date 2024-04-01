@@ -25,7 +25,9 @@ Genetic Algorithms are widely used in low complex game automation or similar. Th
 
 ### Examples and Implementations
 
-I have prepared a [folder](https://www.github.com/strniko/python-ai/tree/main/GA/) containing four python scripts. These scripts are training a GA to find a string that you provide. It can contain letters from a to z, A to Z and spaces:
+I have prepared a [folder](https://www.github.com/strniko/python-ai/tree/main/GA/) containing four Python scripts. These scripts are training a GA to find a string that you provide. It can contain letters from a to z, A to Z and spaces. I am using a type of Levenshtein distance without adding and removing letters as my fitness function. The rate of randomness that I use is 
+
+$$ \text{randomness} = \max\left(\left(0.9^{0.625 \times \text{generation}}\right), 0.1\right) $$
 
 1. **rebirth.py:** This file contains an implementation of a Genetic Algorithm (GA) known as "rebirth" *not an official name*. In this variant of the GA, if a generation produces a worse AI compared to the previous generation, the algorithm revives the better AI from the previous generation, hence the name "rebirth". This mechanism allows for the retention of successful solutions across generations, potentially preventing the loss of beneficial traits. This has shown 187.5% as effective as the "nature" algorithm in a test performed by me where both AIs were run 150 times with the phrase "Never gonna give you up".
 
