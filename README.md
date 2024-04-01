@@ -4,5 +4,5 @@ Here I am giving examples for all sorts of AI structures from [GAs](#The-Genetic
 You can find Information about the AI structure in this doc and on the providet Wikipedia link.
 ## [The Genetic Algorithm (GA)](https://en.wikipedia.org/wiki/Genetic_algorithm){:target="_blank"}
 PLACEHOLDER
-## <a href="[URL](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies)" onclick="window.open(this.href, '_blank'); return false;">Neuroevolution of augmenting topologies (NEAT)</a>
+## <a href="https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies" onclick="window.open(this.href, '_blank'); return false;">Neuroevolution of augmenting topologies (NEAT)</a>
 PLACEHOLDER
