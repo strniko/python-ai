@@ -76,3 +76,69 @@ I have **not** prepared a [folder](https://www.github.com/strniko/python-ai/tree
 ## [Neuroevolution of Augmenting Topologies (NEAT)](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies)
 
 PLACEHOLDER
+
+# Other Important Aspects
+
+In addition to the specific AI structures covered in this document, there are other important aspects to consider when working with artificial neural networks and evolutionary algorithms. Some of these include:
+
+## Activation Functions
+
+Activation functions play a crucial role in artificial neural networks by introducing non-linearity to the model, enabling it to learn complex patterns. Here, we'll delve deeper into some common activation functions:
+
+### Sigmoid Activation Function
+
+The sigmoid function, also known as the logistic function, is defined as:
+
+$$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
+
+where \(x\) is the input to the function.
+
+It squashes the input values between 0 and 1, making it useful for binary classification problems. However, it suffers from the vanishing gradient problem and is not recommended for deep neural networks.
+
+### ReLU Activation Function
+
+ReLU, or Rectified Linear Unit, is defined as:
+
+$$ f(x) = \max(0, x) $$
+
+ReLU sets all negative values to zero and keeps positive values unchanged. It's computationally efficient and helps mitigate the vanishing gradient problem. However, it suffers from the problem of dying ReLU units where gradients become zero for negative inputs.
+
+### Tanh Activation Function
+
+The hyperbolic tangent function, tanh, is defined as:
+
+$$ \text{tanh}(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
+
+It squashes input values between -1 and 1, making it suitable for outputs that may be negative or positive. Tanh addresses the vanishing gradient problem better than sigmoid but can still suffer from it in deep networks.
+
+### Softmax Activation Function
+
+Softmax function is often used in the output layer of a neural network for multi-class classification tasks. It converts raw scores into probabilities, ensuring that the sum of probabilities across classes is equal to one. Softmax is defined as:
+
+$$ \text{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}} $$
+
+where \(x_i\) is the raw score for class \(i\).
+
+### Visualization
+
+Let's visualize these activation functions:
+
+
+```{r}
+x <- seq(-5, 5, length.out=100)
+sigmoid <- 1 / (1 + exp(-x))
+relu <- pmax(0, x)
+tanh <- tanh(x)
+
+plot(x, sigmoid, type='l', col='blue', ylim=c(0,1), xlab='Input', ylab='Output', main='Activation Functions')
+lines(x, relu, col='red')
+lines(x, tanh, col='green')
+legend('topleft', legend=c('Sigmoid', 'ReLU', 'Tanh'), col=c('blue', 'red', 'green'), lty=1)
+grid()
+```
+
+## Training Techniques
+
+Training artificial neural networks and evolutionary algorithms involves various techniques to improve convergence and generalization. Some popular techniques include:
+
+- **Batch Normalization**: Normalizes the activations of each layer to stabilize training and improve convergence.
