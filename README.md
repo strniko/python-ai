@@ -40,6 +40,34 @@ $$ \text{randomness} = \max\left(\left(0.9^{0.625 \times \text{generation}}\righ
 
 4. **nature_speed.py:** Similarly, this file is a speed-optimized version of the *nature* Genetic Algorithm.
 
+## [Feedforward Neural Network (FNN)](https://en.wikipedia.org/wiki/Feedforward_neural_network).
+
+Feedforward Neural Networks (FNNs) are a fundamental type of artificial neural network where connections between the nodes or neurons do not form any cycles. Information moves in only one direction, forward, from the input nodes through hidden nodes (if any) to the output nodes. FNNs are extensively used in various machine learning tasks due to their simplicity and effectiveness in approximating complex functions.
+
+### Operation
+
+1. **Initialization:** FNNs typically involve initializing the weights and biases of the network's connections randomly or using pre-trained weights.
+
+2. **Forward Propagation:** Input data is fed forward through the network layer by layer, with each layer applying a linear transformation followed by a non-linear activation function.
+
+3. **Training:** FNNs are trained using optimization algorithms like gradient descent and its variants. The training process involves adjusting the weights and biases iteratively to minimize a loss function, which measures the difference between the predicted outputs and the actual targets.
+
+4. **Backpropagation:** During training, errors are propagated backward through the network using the chain rule of calculus to update the weights and biases efficiently.
+
+### Use Cases
+
+Feedforward Neural Networks find applications in a wide range of fields, including but not limited to:
+
+- Image classification
+- Speech recognition
+- Natural language processing
+- Financial forecasting
+- Recommendation systems
+
+### Examples and Implementations
+
+I have **not** prepared a [folder](https://www.github.com/strniko/python-ai/tree/main/FNN/) containing example Python scripts showcasing the implementation of FNNs in various tasks. These scripts demonstrate how to build, train, and evaluate FNN models without using popular libraries such as TensorFlow, PyTorch, or Keras.
+
 ## [Neuroevolution of Augmenting Topologies (NEAT)](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies)
 
 PLACEHOLDER
