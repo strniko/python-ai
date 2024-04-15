@@ -2,6 +2,11 @@
 
 Hi, this project of mine is to visualize the different types of AIs that you can use in Python and how to implement them in your projects. Here, I am providing examples for all sorts of AI structures from [GAs](#The-Genetic-Algorithm-(GA)) to [NEAT algorithms](#Neuroevolution-of-augmenting-topologies-(NEAT)). You can find information about the AI structure in this document and on the provided Wikipedia link.
 
+AIs I will be taking about:
+- [Genetic Algorithm (GA)](#genetic-algorithm-ga)
+- [Feedforward Neural Network (FNN)](#feedforward-neural-network-fnn)
+- [Neuroevolution of Augmenting Topologies (NEAT)](#neuroevolution-of-augmenting-topologies-neat)
+
 ## [The Genetic Algorithm (GA)](https://en.wikipedia.org/wiki/Genetic_algorithm)
 
 Genetic Algorithms (GAs) are a class of optimization algorithms inspired by the process of natural selection and genetics. In the context of a list of instructions that gets changed over time, GAs work by evolving a population of candidate solutions (represented as individuals or genomes) over successive generations. Each individual in the population represents a potential solution to the problem at hand.
